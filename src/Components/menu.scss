@@ -1,0 +1,214 @@
+// .container_header{
+//     width: 100vw;
+//     height: 100%;
+//     min-height: 10vh;
+//     display:flex;
+//     background-color:rgb(39, 43, 44);
+//     align-items: center;
+
+// }
+.navagation{
+    width: 100%;
+    // margin-right: 18px;
+    height: auto;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    // background-color: red;
+
+
+}
+
+/* ...........BTN............ */
+.box_menu_icon{
+    width: 3em;
+    height: 3em;
+    // display: block; 
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    align-self:flex-end;
+    margin-right: -12px;
+    
+}
+.menu_icon{
+    width: 1.5rem;
+    height: 1px;
+    background-color:rgba(255, 255, 255, 0.541);
+    padding: 1px;
+    margin: 3px;
+    border-radius: 3px;
+    transition: 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.menu_icon:nth-child(2){
+    width: 1rem;
+    margin-right: -3px;
+}
+.ActiveEffectIconTop{
+    background-color: rgba(255, 255, 255, 0.8);
+    // opacity: 0.7;
+}
+.ActiveEffectIconCenter{
+    background-color: rgb(24, 153, 31);
+    transform: translate(-7px);
+    -webkit-transform: translate(-7px);
+    -moz-transform: translate(-7px);
+    -ms-transform: translate(-7px);
+    -o-transform: translate(-7px);
+}
+.ActiveEffectIconBotton{
+    background-color: rgba(255, 255, 255, 0.8);
+    // opacity: 0.7;
+}
+
+
+/* .................MENU TOGGLE................. */
+.box_menu_list{
+    width: auto;
+    height: 40%;
+    position: absolute;
+    top: 31%;
+    right:17.5vw;
+    background-color:rgba(0, 0, 0, 0.514);
+    border-left: 1px solid rgba(24, 153, 30, 1);
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    list-style: none;
+    z-index: 100;
+    animation: moveMenu 1s linear;
+    -webkit-animation: moveMenu 0.5s linear;
+    transition: all 0.7s linear alternate;
+    -webkit-transition: all 0.7s linear alternate;
+    -moz-transition: all 0.7s linear alternate;
+    -ms-transition: all 0.7s linear alternate;
+    -o-transition: all 0.7s linear alternate;
+}
+
+.box_menu_list:hover{
+    border-left: 1px solid #000;
+}
+
+@keyframes moveMenu {
+    0%{
+        // right:16vw;
+        width: 0;
+        height:0;
+        opacity: 0;
+    }
+   50%{
+       opacity:0;
+   }
+    100%{
+       //right:17.5vw;
+       width: auto;
+       height:40%;
+       opacity: 1;
+}
+}
+.menu_list{
+    // width: calc(100% / 15);
+    padding:15px 40px; 
+    width: 100%;
+    min-width: 100px;
+    border-bottom: 1px solid transparent;
+
+
+    .menu_list_items{
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+    }
+
+} 
+.menu_list:hover{
+    border-bottom: 1px solid rgba(24, 153, 30, 1);
+}
+
+
+
+/* ............MENU HORIZONTAL............ */
+// .box_menuHorizontal_list{
+//     width: 100%;
+//     height: 100%;
+//     display:flex;
+//     align-items: center;
+//     justify-content:flex-end;
+//     flex-direction: row;
+//     list-style: none;
+//     z-index: 100;
+// }
+
+// .menuHorizontal_list{
+//     width: calc(100% / 15);
+//     min-width: 100px;
+// }
+
+/* .............LINKS............. */
+// .menu_list_items, .menuHorizontal_list_items{
+//     text-decoration: none;
+//     color: rgb(231, 179, 8);
+// }
+// .menuHorizontal_list_items::after{
+//  content:"/";
+//  margin-left: 18px;
+//  opacity: 0;
+//  transition:1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+//  transform: rotateX(5deg);
+// }
+// .menuHorizontal_list_items:hover::after{
+//     opacity: 1;
+// }
+
+
+// .afterOf::after{
+//     content:none;
+// }
+
+// .menuHorizontal_list_items:hover{
+//     color: rgb(240, 224, 155);
+// }
+
+/* ................MOBILE................... */
+// @media screen and (min-width: 200px) and (max-width: 680px) {
+// .container_header{
+//     width:100vw;
+//     min-height: none;
+//     align-items: center;
+// }
+// .navagation{
+//      width:100%; 
+//     /* background-color:darkorange; */
+//     justify-content:center;
+//     flex-direction: column;
+//     height:100%;
+// }
+// .box_menu_icon{
+//     display:flex;
+//     align-items: center;
+//     justify-content:center;
+//     flex-direction: column;
+//     align-self:flex-end;
+//     margin-right: 18px;
+// }
+// .box_menuHorizontal_list{
+//     display:none !important;
+// }
+// .box_menu_list{
+//     width: 100vw;
+//     height: calc(100vh - 3em);
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+// .menu_list{
+//     width: 100%;
+//     height: calc(100vh / 6);
+//     text-align:center;
+// }
+// }
+ 
