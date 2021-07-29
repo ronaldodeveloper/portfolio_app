@@ -11,6 +11,7 @@ export const Menu= ()=>{
     const btnEffectTop= document.querySelector('.menu_icon_top')
     const btnEffectCenter= document.querySelector('.menu_icon_center')
     const btnEffectBotton= document.querySelector('.menu_icon_botton')
+    
     btnEffectTop.classList.toggle('ActiveEffectIconTop')
     btnEffectCenter.classList.toggle('ActiveEffectIconCenter')
     btnEffectBotton.classList.toggle('ActiveEffectIconBotton')
@@ -31,23 +32,11 @@ let MenuToggle;
       </ul>;
  }
       
-//  const MenuHorizontal= 
-//       <ul className="box_menuHorizontal_list">
-//         <li className="menuHorizontal_list">
-//           <a href="" className="menuHorizontal_list_items">Home</a></li>
-//         <li className="menuHorizontal_list">
-//           <a href="" className="menuHorizontal_list_items">Aboult</a></li>
-//         <li className="menuHorizontal_list">
-//           <a href="" className="menuHorizontal_list_items">Services</a></li>
-//         <li className="menuHorizontal_list">
-//           <a href="" className="menuHorizontal_list_items">Products</a></li>
-//         <li className="menuHorizontal_list">
-//           <a href="" className="menuHorizontal_list_items afterOf">Contact</a></li>
-//       </ul>;
 
    return (
+    <header className="menuContent">
+       <div><p className="logo"><strong>r</strong><strong>m.</strong></p></div>
          <nav className="navagation">
-           {/* {MenuHorizontal} */}
            <div className="box_menu_icon" onClick={toggleAtive}>
              <div className="menu_icon menu_icon_top"></div>
              <div className="menu_icon menu_icon_center"></div>
@@ -55,5 +44,12 @@ let MenuToggle;
            </div>
            {MenuToggle}
          </nav>
+    </header>
    )
 }
+
+
+            // <header className="menuContent">
+            //   <div><p className="logo"><strong>r</strong><strong>m.</strong></p></div>
+            //  <Menu/>
+            // </header>
