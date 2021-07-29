@@ -11,10 +11,13 @@ export const Menu= ()=>{
     const btnEffectTop= document.querySelector('.menu_icon_top')
     const btnEffectCenter= document.querySelector('.menu_icon_center')
     const btnEffectBotton= document.querySelector('.menu_icon_botton')
-    
     btnEffectTop.classList.toggle('ActiveEffectIconTop')
     btnEffectCenter.classList.toggle('ActiveEffectIconCenter')
     btnEffectBotton.classList.toggle('ActiveEffectIconBotton')
+
+    // menuCicle
+    const menuCicleOff= document.querySelector('.menuCicle')
+    menuCicleOff.classList.toggle('menuCicleOn')
   }
 
 let MenuToggle;
@@ -37,6 +40,7 @@ let MenuToggle;
     <header className="menuContent">
        <div><p className="logo"><strong>r</strong><strong>m.</strong></p></div>
          <nav className="navagation">
+           <div className='menuCicle'></div>{/* MENU CICLE */}
            <div className="box_menu_icon" onClick={toggleAtive}>
              <div className="menu_icon menu_icon_top"></div>
              <div className="menu_icon menu_icon_center"></div>

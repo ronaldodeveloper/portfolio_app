@@ -1,20 +1,18 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import { Menu } from '../Components/Menu.jsx'
 import { Footer } from '../Components/Footer.jsx'
-// import { Main } from '../Components/Main.jsx'
 import { MdAdd } from "react-icons/md";
-import './home.scss';
-import bg from '../assets/perfil.svg'
-import bgBlack from '../assets/perfilblack.svg'
+import './stylesheet/home.scss';
 
+// IMAGE
+import bgImage from '../assets/perfilblack.svg'
 const bgPerfil= {
-    backgroundImage: `url(${bgBlack})`,
+    backgroundImage: `url(${bgImage})`,
     backgroundPosition: '75%',
     backgroundRepeat: 'no-repeat',
     backgroundSize: '400px',
     backgroundColor: 'rgba(0,0,0, .8)',
-    backgroundBlendMode: 'color-dodge',
+    backgroundBlendMode: 'multiply',
 
 }
 
@@ -22,7 +20,7 @@ export const Home= ()=>{
     return (
         <section className="container" style={bgPerfil}>
             <Menu/>
-            <main>
+            <main className='home'>
                 <section className='title'>
                     <p>OLÁ, EU SOU RONALDO MARIANO</p>
                     <h1>FRONT END <span>DEVELOPER</span></h1>

@@ -2,10 +2,12 @@ footer{
     width:88%;
     height:auto;
     padding: 15px 0;
-    // background-color:rgb(120, 108, 121);
     display:flex;
     flex-direction:row;
     justify-content: space-between;
+    position:relative;
+   
+
     nav .socialMediaIcon{
         // background-color: red;
         padding-left: 10px;

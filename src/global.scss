@@ -23,12 +23,13 @@ body{
   section.container{
     width: 65vw;
     height: 75vh;
-    // background-color: rgb(18, 19, 18);
+    background-color: rgba(0, 0, 0, .9);
     display:flex;
     flex-direction: column;
     justify-content:center;
     align-items: center; 
     overflow:hidden;
+    z-index: 100;
     
     box-shadow: -1px 37px 59px -26px rgba(0,0,0,0.73);
     -webkit-box-shadow: -1px 37px 59px -26px rgba(0,0,0,0.73);
