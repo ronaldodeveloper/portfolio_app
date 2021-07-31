@@ -12,8 +12,7 @@ const bgPerfil= {
     backgroundRepeat: 'no-repeat',
     backgroundSize: '400px',
     backgroundColor: 'rgba(0,0,0, .8)',
-    backgroundBlendMode: 'multiply',
-
+    backgroundBlendMode: 'darken',
 }
 
 export const Home= ()=>{

@@ -1,4 +1,249 @@
+$borderGreen:rgba(56, 58, 56, 0.335);
+// $borderGreen:rgb(24, 153, 31);
+
+$borderSize:5px;
+
 main.about{
     width:88%;
-    height:100%
+    height:100%;
+    // background-color:rgb(98, 98, 98);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+    &>.aboutMe{
+        // background-color:rebeccapurple;
+        width:50%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1.5em;
+        position: relative;
+
+        .borderDetailsTop{
+            position:absolute;
+            top: 0;
+            right: 0;
+            border-top: $borderSize solid $borderGreen;
+            border-right: $borderSize solid $borderGreen;
+            width:20%;
+            height: 20%;
+            z-index: 100;
+            animation: moveBorders  1.5s ease-in-out;
+            -webkit-animation: moveBorders  1.5s ease-in-out;
+            transition:all 0.5s linear forwards;
+            -webkit-transition:all 0.5s linear forwards;
+            -moz-transition:all 0.5s linear forwards;
+            -ms-transition:all 0.5s linear forwards;
+            -o-transition:all 0.5s linear forwards;
+
+        }
+        .borderDetailsBottom{
+            position:absolute;
+            bottom: 0;
+            left: 0;
+            border-bottom: $borderSize solid $borderGreen;
+            border-left: $borderSize solid $borderGreen;
+            width:20%;
+            height: 20%;
+            z-index: 100;
+            animation: moveBorders  1.5s ease-in-out;
+            -webkit-animation: moveBorders  1.5s ease-in-out;
+            transition:all 0.5s linear forwards;
+            -webkit-transition:all 0.5s linear forwards;
+            -moz-transition:all 0.5s linear forwards;
+            -ms-transition:all 0.5s linear forwards;
+            -o-transition:all 0.5s linear forwards;
+        }
+
+        @keyframes moveBorders{
+            0%{
+                width:0;
+                height:0;
+                border-color: rgb(24, 153, 31);
+            }
+            100%{
+                width:20%;
+                height: 20%;
+            }
+        }
+
+        &>h2{
+            color: rgb(104, 104, 104);
+            font-size:1.4em;
+            font-weight:400;
+            padding-bottom: 15px;
+            z-index: 200;
+
+            animation: moveTxt 1s linear forwards;
+            -webkit-animation: moveTxt 1s linear forwards;
+            transition:all 0.5s linear;
+            -webkit-transition:all 0.5s linear;
+            -moz-transition:all 0.5s linear;
+            -ms-transition:all 0.5s linear;
+            -o-transition:all 0.5s linear;
+        }
+
+        &>p{
+            width:100%;
+            height:auto;
+            color: rgb(243, 243, 243);
+            font-size:14px;
+            font-weight:200;
+            padding: 0 0;
+            line-height: 2em;
+            z-index: 200;
+            animation: moveTxt 1s linear forwards;
+            -webkit-animation: moveTxt 1s linear forwards;
+            transition:all 0.5s linear;
+            -webkit-transition:all 0.5s linear;
+            -moz-transition:all 0.5s linear;
+            -ms-transition:all 0.5s linear;
+            -o-transition:all 0.5s linear;  
+        }
+
+        @keyframes moveTxt{
+            0%{
+              opacity: 0;
+              transform: translateY(50px) translateX(-30px);
+              -webkit-transform: translateY(50px) translateX(-30px);
+              -moz-transform: translateY(50px) translateX(-30px);
+              -ms-transform: translateY(50px) translateX(-30px);
+              -o-transform: translateY(50px) translateX(-30px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0);
+                -webkit-transform: translateY(0);
+                -moz-transform: translateY(0);
+                -ms-transform: translateY(0);
+                -o-transform: translateY(0);
+           }
+        }
+    }
+    &>.aboutSkills{
+        width:50%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        // padding-left: 1.5em;
+        animation: moveSkills 1s linear forwards;
+        -webkit-animation: moveSkills 1s linear forwards;
+        transition:all 0.5s linear;
+        -webkit-transition:all 0.5s linear;
+        -moz-transition:all 0.5s linear;
+        -ms-transition:all 0.5s linear;
+        -o-transition:all 0.5s linear;
+
+
+        @keyframes moveSkills{
+            0%{
+                opacity: 0;
+                transform: translateY(-50px);
+                -webkit-transform: translateY(-50px);
+                -moz-transform: translateY(-50px);
+                -ms-transform: translateY(-50px);
+                -o-transform: translateY(-50px);
+            }
+              100%{
+                  opacity: 1;
+                  transform: translateY(0);
+                  -webkit-transform: translateY(0);
+                  -moz-transform: translateY(0);
+                  -ms-transform: translateY(0);
+                  -o-transform: translateY(0);
+             }
+
+        }
+
+        article{
+            width:100%;
+            height:100%;
+            display: flex;           
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            // background-color: rgb(126, 110, 20);
+            h3{
+                color: rgb(207, 206, 206);
+                font-size:1em;
+                // padding: 10px 0;
+            }
+            h4{
+                color: rgb(109, 109, 109);
+                font-size:0.7em;
+                letter-spacing:0.2em;
+            }
+            div{
+                font-size:1.5em;
+                // padding:0.1rem 0;
+
+                .iconSkills{
+                    margin: 0 0.5rem;
+                    // opacity:0.5;
+                }
+                 
+                .javascript,
+                .node,
+                .css,
+                .html,
+                .react,
+                .git,
+                .bootstrap,
+                .sass,
+                .json,
+                .webpack,
+                .babel,
+                .photoshop{
+                    color:rgb(255, 255, 255);
+                }
+
+
+                .javascript:hover{ color:rgb(233, 211, 18);}
+                .node:hover{ color:rgb(62, 121, 65);}
+                .css:hover{ color:rgb(11, 115, 185);}
+                .html:hover{ color:rgb(202, 124, 60);}
+                .react:hover{ color:rgb(114, 157, 226);}
+                .git:hover{ color:rgb(240, 118, 3);}
+                .bootstrap:hover{ color:rgb(67, 57, 158);}
+                .sass:hover{ color:rgb(231, 108, 221);}
+                .json:hover{ color:rgb(245, 189, 4);}
+                .webpack:hover{ color:rgb(147, 186, 231);}
+                .babel:hover{ color:rgb(142, 160, 39);}
+                .photoshop:hover{ color:rgb(108, 131, 195);}
+
+            }
+            }
+    }  
+
+
+    @media screen and (min-width:200px) and (max-width:800px){
+        &{
+            // background-color: rgb(209, 143, 143);
+            flex-direction: column;
+
+            &>.aboutMe{
+                width: 100%;
+                height: 50%;
+                padding: 0 15px;
+                // background-color: antiquewhite;
+            }
+            &>.aboutSkills{
+                width: 100%;
+                height: 50%;
+                padding-left:none;
+
+            //    article{
+                      
+            //     div{
+            //         padding:0.2rem 0;
+            //     }
+            //    } 
+
+            }
+        }
+    }
+    
 }
+

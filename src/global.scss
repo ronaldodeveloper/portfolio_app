@@ -22,7 +22,9 @@ body{
 
   section.container{
     width: 65vw;
-    height: 75vh;
+    max-width: 1920;
+    // height: 75vh;
+    height: 80vh;
     background-color: rgba(0, 0, 0, .9);
     display:flex;
     flex-direction: column;
@@ -31,8 +33,33 @@ body{
     overflow:hidden;
     z-index: 100;
     
-    box-shadow: -1px 37px 59px -26px rgba(0,0,0,0.73);
-    -webkit-box-shadow: -1px 37px 59px -26px rgba(0,0,0,0.73);
-    -moz-box-shadow: -1px 37px 59px -26px rgba(0,0,0,0.73);
+    // box-shadow: -1px 37px 59px -26px rgba(0,0,0,0.73);
+    // -webkit-box-shadow: -1px 37px 59px -26px rgba(0,0,0,0.73);
+    // -moz-box-shadow: -1px 37px 59px -26px rgba(0,0,0,0.73);
+
+    box-shadow: -1px 34px 67px rgba(0, 0, 0, 0.7)  ; 
+    -webkit-box-shadow: -1px 34px 67px rgba(0, 0, 0, 0.7)  ; 
+    -moz-box-shadow: -1px 34px 67px rgba(0, 0, 0, 0.7)  ; 
+
+    @media screen and (min-width:801px) and (max-width:1024px){
+      &{
+        width: 80vw;
+        height: 80vh;
+      }
+    }
+
+    @media screen and (min-width:501px) and (max-width:800px){
+      &{
+        width: 85vw;
+        height: 90vh;
+      }
+    }
+
+    @media screen and (min-width:200px) and (max-width:500px){
+      &{
+        width: 100vw;
+        height: 100vh;
+      }
+    }
   }
 }
