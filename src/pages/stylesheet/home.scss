@@ -19,7 +19,7 @@
             h1{
                 font-size:2em;
                 font-weight: bold;
-                padding: 7px 0;
+                padding: 11px 0;
                 margin-left: 12%;
                 
               
@@ -36,8 +36,8 @@
                width:10%;
                height:3px;
                background-color: rgb(24, 153, 31);
-               animation: moveElement .5s linear;
-               -webkit-animation: moveElement .5s linear;
+               animation: moveElement 2s ease-in-out;
+               -webkit-animation: moveElement 2s ease-in-out;
 
             @keyframes moveElement{
                    0%{ 
@@ -51,16 +51,65 @@
                     }
                }
             }
-
-            p:nth-child(1){
-                color: rgb(82, 82, 82);
-            }
             p{
                 color: rgb(82, 82, 82);
                 letter-spacing:0.1em;
                 font-size: 14px;
-                animation: moveElementX 2s linear;
-                -webkit-animation: moveElementX 2s linear;
+                
+            }
+
+            p:nth-child(1){
+                color: rgb(82, 82, 82);
+                animation: moveElementX 1s linear;
+                -webkit-animation: moveElementX 1s linear;
+            }
+
+            @keyframes moveElementX{
+                0%{
+                    opacity: 0;
+                    transform: translateY(-50px);
+                    -webkit-transform: translateY(-50px);
+                    -moz-transform: translateY(-50px);
+                    -ms-transform: translateY(-50px);
+                    -o-transform: translateY(-50px);
+                }
+                50%{ color:rgb(24, 153, 31);}
+                100%{
+                    opacity: 1;
+                    transform: translateY(0);
+                    -webkit-transform: translateY(0);
+                    -moz-transform: translateY(0);
+                    -ms-transform: translateY(0);
+                    -o-transform: translateY(0);
+                 }
+             }
+
+            p.welcome{
+                color: rgb(31, 219, 72);
+                animation: moveElementY 1s linear;
+                -webkit-animation: moveElementY 1s linear;
+            }
+            
+            
+            @keyframes moveElementY{
+                0%{
+                    opacity: 0;
+                    transform: translateY(50px);
+                    -webkit-transform: translateY(50px);
+                    -moz-transform: translateY(50px);
+                    -ms-transform: translateY(50px);
+                    -o-transform: translateY(50px);
+                }
+                100%{
+                    opacity: 1;
+                    transform: translateY(0);
+                    -webkit-transform: translateY(0);
+                    -moz-transform: translateY(0);
+                    -ms-transform: translateY(0);
+                    -o-transform: translateY(0);
+                 }
+            
+
             }
 
             div{
@@ -68,24 +117,6 @@
                 color: rgb(134, 134, 134);
             }
 
-            @keyframes moveElementX{
-                0%{
-                    opacity: 0;
-                    transform: translateX(50px);
-                    -webkit-transform: translateX(50px);
-                    -moz-transform: translateX(50px);
-                    -ms-transform: translateX(50px);
-                    -o-transform: translateX(50px);
-}
-                100%{
-                    opacity: 1;
-                    transform: translateX(0);
-                    -webkit-transform: translateX(0);
-                    -moz-transform: translateX(0);
-                    -ms-transform: translateX(0);
-                    -o-transform: translateX(0);
-}
-            }
 
         }
 

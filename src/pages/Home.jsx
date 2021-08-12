@@ -11,8 +11,8 @@ const bgPerfil= {
     backgroundPosition: '75%',
     backgroundRepeat: 'no-repeat',
     backgroundSize: '400px',
-    backgroundColor: 'rgba(0,0,0, .8)',
-    backgroundBlendMode: 'darken',
+    backgroundColor: 'rgba(0,0,0,0.7)',
+    backgroundBlendMode: 'multiply',
 }
 
 export const Home= ()=>{
@@ -23,7 +23,7 @@ export const Home= ()=>{
                 <section className='title'>
                     <p>OLÁ, EU SOU RONALDO MARIANO</p>
                     <h1>FRONT END <span>DEVELOPER</span></h1>
-                    <p>Seja bem vindo ao meu website...</p>
+                    <p className='welcome'>Seja bem vindo ao meu website...</p>
                     <div><MdAdd/></div>
                 </section>
                 <section className='description'>

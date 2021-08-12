@@ -43,7 +43,7 @@ export const About= ()=>{
                         <FaNodeJs className='iconSkills node'/>
                         
                     </div>
-                    <h4>FROMEWORKS E BLIBLIOTECAS</h4>
+                    <h4>FRAMEWORKS E BIBLIOTECAS</h4>
                     <div>
                         <FaReact className='iconSkills react'/>
                         <FaGitAlt className='iconSkills git'/>
@@ -51,7 +51,7 @@ export const About= ()=>{
                         <FaSass className='iconSkills sass'/>
                         <VscJson className='iconSkills json'/>
                     </div>
-                    <h4>FERRAMENTAS</h4>
+                    <h4>OUTROS CONHECIMENTOS</h4>
                     <div>
                         <SiWebpack className='iconSkills webpack'/>
                         <SiBabel className='iconSkills babel'/>

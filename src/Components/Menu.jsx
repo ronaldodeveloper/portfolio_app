@@ -29,7 +29,7 @@ let MenuToggle;
         <li className="menu_list">
           <Link to='/sobre' className="menu_list_items">Sobre</Link></li>
         <li className="menu_list">
-          <Link to='/portifolio' className="menu_list_items">Portifólio</Link></li>
+          <Link to='/portifolio' className="menu_list_items">Portfólio</Link></li>
         <li className="menu_list">
           <Link to='/contato' className="menu_list_items">Contato</Link></li>
       </ul>;
