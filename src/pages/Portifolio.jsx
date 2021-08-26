@@ -52,7 +52,6 @@ export const Portifolio= ()=>{
                      <p>subtitulo</p>
                  </div>
              </a>
-
              </div>
              
             

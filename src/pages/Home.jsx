@@ -10,7 +10,7 @@ export const Home= ()=>{
             <Menu/>
             <main className='home'>
                 <section className='title'>
-                    <p>OLÁ, EU SOU RONALDO MARIANO</p>
+                    <p className='subTitle'>OLÁ, EU SOU RONALDO MARIANO</p>
                     <h1>FRONT END <span>DEVELOPER</span></h1>
                     <p className='welcome'>Seja bem vindo ao meu website...</p>
                     <div><MdAdd/></div>

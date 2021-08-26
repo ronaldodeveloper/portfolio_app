@@ -27,17 +27,40 @@ main.portifolio{
             padding: 12px 0;
             color: rgb(255, 255, 255);
             display: block;
+            animation: moveTitle 0.5s ease-in-out forwards;
         }
+        @keyframes moveTitle {
+            0%{
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+            100%{ 
+                transform: translateX(0px);
+            }
+        }
+
+
         h2{
             font-size: 3em;
             font-weight: bold;
             padding: 15px 0 10px 15px;
+            animation: moveTitleR 1.2s ease-in-out forwards;
         }
         p{ 
             font-size: 1.1em;
             font-weight: lighter;
             color: rgb(13, 165, 51);
             padding-left: 15px;
+            animation: moveTitleR 1.2s ease-in-out forwards;
+        }
+        @keyframes moveTitleR {
+            0%{
+                transform: translateX(100px);
+                opacity: 0;
+            }
+            100%{ 
+                transform: translateX(0px);
+            }
         }
 
     }
@@ -52,6 +75,7 @@ main.portifolio{
         position:relative;
         right: -10px;
         z-index:100;
+        animation: moveCardY 1.5s ease-in-out forwards;
 
         a{
             text-decoration: none;
@@ -107,6 +131,15 @@ main.portifolio{
             }
 
       }
+    }
+    @keyframes moveCardY {
+        0%{
+            transform: translateY(400px);
+            opacity: 0;
+        }
+        100%{ 
+            transform: translateY(0px);
+        }
     }
 
     // mobile responsive

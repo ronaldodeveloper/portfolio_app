@@ -63,14 +63,16 @@
                }
             }
             p{
-                color: rgb(82, 82, 82);
+               
+                color: rgb(105, 104, 104);
                 letter-spacing:0.1em;
                 font-size: 14px;
                 
             }
 
             p:nth-child(1){
-                color: rgb(82, 82, 82);
+                color: rgb(139, 139, 139);
+                // color: rgb(82, 82, 82);
                 animation: moveElementX 1s linear;
                 -webkit-animation: moveElementX 1s linear;
             }
@@ -152,11 +154,25 @@
         } 
 
         @media screen and (min-width:200px) and (max-width:800px){
+        
+            .title{
+                
+                p.welcome{
+                    font-size:1.2em;
+                }
+                p:nth-child(1){
+                    color:rgb(255, 254, 254);
+                    background-color: rgb(32, 32, 32);
+                    padding: 8px 7px;
+                }
+            }
             .description{
                 p{
                     display: none;
                 }
-            }
+            } 
+        
+            
         }
 
     }
