@@ -91,6 +91,7 @@ main.about{
             color: rgb(243, 243, 243);
             font-size:14px;
             font-weight:200;
+            letter-spacing:0.05rem;
             padding: 0 0;
             line-height: 2em;
             z-index: 200;
@@ -183,35 +184,92 @@ main.about{
                     margin: 0 0.5rem;
                     // opacity:0.5;
                 }
+
+                .javascript{ 
+                    transition: 0.5s linear;
+                    color:rgb(233, 211, 18);
+                    opacity:0.6;
+                }
+                .node{ 
+                    transition: 0.5s linear;
+                    color:rgb(62, 121, 65);
+                    opacity:0.6;
+                }
+                .css{ 
+                    transition: 0.5s linear;
+                    color:rgb(11, 115, 185);
+                    opacity:0.6;
+                }
+                .html{ 
+                    transition: 0.5s linear;
+                    color:rgb(202, 124, 60);
+                    opacity:0.6;
+                }
+                .react{ 
+                    transition: 0.5s linear;
+                    color:rgb(114, 157, 226);
+                    opacity:0.6;
+                }
+                .git{ 
+                    transition: 0.5s linear;
+                    color:rgb(240, 118, 3);
+                    opacity:0.6;
+                }
+                .bootstrap{ 
+                    transition: 0.5s linear;
+                    color:rgb(67, 57, 158);
+                    opacity:0.6;
+                }
+                .sass{ 
+                    transition: 0.5s linear;
+                    color:rgb(231, 108, 221);
+                    opacity:0.6;
+                }
+                .json{ 
+                    transition: 0.5s linear;
+                    color:rgb(245, 189, 4);
+                    opacity:0.6;
+                }
+                .webpack{ 
+                    transition: 0.5s linear;
+                    color:rgb(147, 186, 231);
+                    opacity:0.6;
+                }
+                .babel{ 
+                    transition: 0.5s linear;
+                    color:rgb(142, 160, 39);
+                    opacity:0.6;
+                }
+                .photoshop{ 
+                    transition: 0.5s linear;
+                    color:rgb(108, 131, 195);
+                    opacity:0.6;
+                }
+                .postgre{ 
+                    transition: 0.5s linear;
+                    color:rgb(62, 79, 124);
+                    opacity:0.6;
+                }
+
                  
-                .javascript,
-                .node,
-                .css,
-                .html,
-                .react,
-                .git,
-                .bootstrap,
-                .sass,
-                .json,
-                .webpack,
-                .babel,
-                .photoshop{
-                    color:rgb(255, 255, 255);
+                .javascript:hover,
+                .node:hover,
+                .css:hover,
+                .html:hover,
+                .react:hover,
+                .git:hover,
+                .bootstrap:hover,
+                .sass:hover,
+                .json:hover,
+                .webpack:hover,
+                .babel:hover,
+                .photoshop:hover,
+                .postgre:hover{
+                    opacity: 1;
                 }
 
 
-                .javascript:hover{ color:rgb(233, 211, 18);}
-                .node:hover{ color:rgb(62, 121, 65);}
-                .css:hover{ color:rgb(11, 115, 185);}
-                .html:hover{ color:rgb(202, 124, 60);}
-                .react:hover{ color:rgb(114, 157, 226);}
-                .git:hover{ color:rgb(240, 118, 3);}
-                .bootstrap:hover{ color:rgb(67, 57, 158);}
-                .sass:hover{ color:rgb(231, 108, 221);}
-                .json:hover{ color:rgb(245, 189, 4);}
-                .webpack:hover{ color:rgb(147, 186, 231);}
-                .babel:hover{ color:rgb(142, 160, 39);}
-                .photoshop:hover{ color:rgb(108, 131, 195);}
+                
 
             }
             }

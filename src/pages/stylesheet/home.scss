@@ -1,4 +1,15 @@
 
+    $imgPath: '../../assets/imagePerfil.png';
+    
+    section#homebg{
+        background-image:url(#{$imgPath});
+        background-position: 75%;
+        background-repeat: no-repeat;
+        background-size: 400px;
+        // background-color: rgba(0, 0, 0, 0.3);
+        // background-blend-mode: multiply;
+      }
+
     main.home{
         width:88%;
         height:100%;
@@ -120,16 +131,25 @@
 
         }
 
-        .description p{
-            width:12px;
-            height:auto;
-            font-size: 11px;
-            color: rgba(139, 139, 139, 0.493);
-            letter-spacing:.5em;
-            writing-mode:sideways-lr;
-            -webkit-writing-mode:sideways-lr;
-            -ms-writing-mode:sideways-lr;
-        }
+        .description{
+            //    background-color:rebeccapurple;
+               position: absolute;
+               right:-85px;
+               width:auto;
+               transform:rotate(-90deg);
+
+            p{
+                // width:12px;
+                height:auto;
+                font-size: 11px;
+                color: rgba(139, 139, 139, 0.493);
+                letter-spacing:.5em;
+                direction:rtl;
+                // writing-mode:sideways-lr;
+                // -webkit-writing-mode:sideways-lr;
+                // -ms-writing-mode:sideways-lr;
+            }
+        } 
 
     }
     

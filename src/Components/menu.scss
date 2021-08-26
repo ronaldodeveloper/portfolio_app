@@ -11,14 +11,20 @@ header.menuContent{
 
 
 
-    div{
+    div.box_logo{
+        width:auto;
         color: rgb(255, 255, 255);
+        // background-color: aqua;
         p.logo{
+            display:flex;
+            flex-direction: row;
             font-family: 'Orbitron', sans-serif;
             font-size: 1.4em;
             letter-spacing:0.3rem;
         }
         p.logo strong:nth-Child(2){
+            padding: 0;
+            margin: 0;
             color: rgb(24, 153, 31);
         }
       }

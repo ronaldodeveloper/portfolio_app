@@ -38,7 +38,7 @@ let MenuToggle;
 
    return (
     <header className="menuContent">
-       <div><p className="logo"><strong>r</strong><strong>m.</strong></p></div>
+       <div className="box_logo"><p className="logo"><strong>r</strong><strong>m.</strong></p></div>
          <nav className="navagation">
            <div className='menuCicle'></div>{/* MENU CICLE */}
            <div className="box_menu_icon" onClick={toggleAtive}>

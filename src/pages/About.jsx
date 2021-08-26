@@ -4,7 +4,7 @@ import { Footer } from '../Components/Footer.jsx'
 
 // ICONS
 import { FaReact, FaNodeJs, FaGitAlt, FaSass, FaBootstrap } from "react-icons/fa";
-import { SiJavascript, SiCss3, SiHtml5, SiWebpack, SiBabel, SiAdobephotoshop } from "react-icons/si";
+import { SiJavascript, SiCss3, SiHtml5, SiWebpack, SiBabel, SiAdobephotoshop, SiPostgresql } from "react-icons/si";
 import { VscJson } from "react-icons/vsc";
 
 
@@ -37,25 +37,26 @@ export const About= ()=>{
                     <h3>SKILLS</h3>
                     <h4>LINGUAGENS</h4>
                     <div> 
-                        <SiCss3 className='iconSkills css'/>
-                        <SiHtml5 className='iconSkills html'/> 
-                        <SiJavascript className='iconSkills javascript'/>
-                        <FaNodeJs className='iconSkills node'/>
+                        <SiCss3 className='iconSkills css' title='CSS3'/>
+                        <SiHtml5 className='iconSkills html' title='html'/> 
+                        <SiJavascript className='iconSkills javascript' title='Javascript'/>
+                        <FaNodeJs className='iconSkills node' title='Node.js'/>
                         
                     </div>
                     <h4>FRAMEWORKS E BIBLIOTECAS</h4>
                     <div>
-                        <FaReact className='iconSkills react'/>
-                        <FaGitAlt className='iconSkills git'/>
-                        <FaBootstrap className='iconSkills bootstrap'/>                
-                        <FaSass className='iconSkills sass'/>
-                        <VscJson className='iconSkills json'/>
+                        <FaReact className='iconSkills react' title='React.js'/>
+                        <FaGitAlt className='iconSkills git' title='Git'/>
+                        <FaBootstrap className='iconSkills bootstrap' title='Bootstrap'/>                
+                        <FaSass className='iconSkills sass' title='Sass'/>
+                        <VscJson className='iconSkills json' title='Json'/>
                     </div>
                     <h4>OUTROS CONHECIMENTOS</h4>
                     <div>
-                        <SiWebpack className='iconSkills webpack'/>
-                        <SiBabel className='iconSkills babel'/>
-                        <SiAdobephotoshop className='iconSkills photoshop'/>
+                        <SiPostgresql className='iconSkills postgre postgre' title='PostgreSQL'/>
+                        <SiWebpack className='iconSkills webpack' title='Webpack'/>
+                        <SiBabel className='iconSkills babel' title='Babel'/>
+                        <SiAdobephotoshop className='iconSkills photoshop' title='Photoshop'/>
                     </div>
                 </article>
             </section>
