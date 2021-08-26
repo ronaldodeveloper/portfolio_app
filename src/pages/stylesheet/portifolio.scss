@@ -11,12 +11,11 @@ main.portifolio{
      
     article{
         position:absolute;
-        top: calc(100% / 3);
+        top: calc(100% / 4);
         left: 0;
         width:40%;
         height:auto;
         z-index:200;
-        // background-color: blueviolet;
 
         h3{
             width:50%;
@@ -24,6 +23,7 @@ main.portifolio{
             font-weight: 100;
             font-size: 1rem;
             background-color:black;
+            letter-spacing:0.2rem;
             padding: 12px 0;
             color: rgb(255, 255, 255);
             display: block;
@@ -52,9 +52,6 @@ main.portifolio{
         position:relative;
         right: -10px;
         z-index:100;
-        // background-color: #fff;
-
-
 
         a{
             text-decoration: none;
@@ -73,9 +70,11 @@ main.portifolio{
 
                 h2,
                 p{
+                    width: 100%;
                     color: rgb(0, 0, 0);
                     font-weight: lighter;
                     display: none;
+                    word-wrap: break-word;
                 }
             }
             div.portifolioCard:hover{ 
@@ -111,6 +110,24 @@ main.portifolio{
     }
 
     // mobile responsive
+    @media screen and (min-width:800px) and (max-width:1200px){
+
+        &{
+
+          article{
+              width:30%;
+
+              h3{
+                  width: 100%;
+              }
+          }  
+          div{
+              width:70%;
+
+          }
+        }
+    }
+
     @media screen and (min-width:200px) and (max-width:800px){
 
         &{
@@ -122,22 +139,33 @@ main.portifolio{
               top: 10px;
   
               h2{
-                  font-size: 2.5em;
+                  font-size: 2em;
                   padding: 5px 7% 0;
               }
               p{
                   font-size: .9em;
                   width: 100%;
                   padding: 0 7%;
-  
               }
           }
           div{
-              width: 100%;
+              width: 100%;        
               right:10px;
+              display: grid;
+              grid-template-columns: 50% 50%;
+              
+              
+
+              a{
+                  width: 100%;
+                  display: grid;
+                  justify-content: center;
+
+                  div.portifolioCard{
+                      width: 7em;
+                  }
+              }
           }
         }
-      }
-
-
+    }
 }

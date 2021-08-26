@@ -10,43 +10,43 @@ export const Portifolio= ()=>{
         <Menu/>
          <main className='portifolio'>
              <article>
-                 <h3>TEMPLATE</h3>
-                 <h2>PORTFÓLIO</h2>
+                 <h3>PORTFÓLIO</h3>
+                 <h2>LAYOUTS</h2>
                  <p>Conheça alguns dos  meus projetos mais recentes</p>
              </article>
              <div>
-             <a href="https://themeforest.net/category/site-templates/creative">
+             <a href="https://www.linkedin.com/in/ronaldo-mariano">
                  <div className="portifolioCard">
                  <h2>TÍTULO</h2>
                      <p>subtitulo</p>
                  </div>
              </a>
-             <a href="https://themeforest.net/category/site-templates/creative">
+             <a href="https://www.linkedin.com/in/ronaldo-mariano">
                  <div className="portifolioCard">
                  <h2>TÍTULO</h2>
                      <p>subtitulo</p>
                  </div>
              </a>
-             <a href="https://themeforest.net/category/site-templates/creative">
+             <a href="https://www.linkedin.com/in/ronaldo-mariano">
                  <div className="portifolioCard">
                      <h2>TÍTULO</h2>
                      <p>subtitulo</p>
                  </div>
              </a>
              
-             <a href="https://themeforest.net/category/site-templates/creative">
+             <a href="https://www.linkedin.com/in/ronaldo-mariano">
                  <div className="portifolioCard">
                      <h2>TÍTULO</h2>
                      <p>subtitulo</p>
                      </div>
              </a>
-             <a href="https://themeforest.net/category/site-templates/creative">
+             <a href="https://www.linkedin.com/in/ronaldo-mariano">
                  <div className="portifolioCard">
                  <h2>TÍTULO</h2>
                      <p>subtitulo</p>
                  </div>
              </a>
-             <a href="https://themeforest.net/category/site-templates/creative">
+             <a href="https://www.linkedin.com/in/ronaldo-mariano">
                  <div className="portifolioCard">
                  <h2>TÍTULO</h2>
                      <p>subtitulo</p>

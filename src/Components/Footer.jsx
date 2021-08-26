@@ -11,11 +11,11 @@ export const Footer=()=>{
                 </div>
                 
                 <nav>
-                    <a href='#' 
+                    <a href='https://www.instagram.com/ronaldo.dev' 
                        className="socialMediaIcon"><FaInstagram className='bgIcon'/></a>
                     <a href='https://github.com/ronaldodeveloper'
                        className="socialMediaIcon"><FaGithub className='bgIcon'/></a>
-                    <a href='#' 
+                    <a href='https://api.whatsapp.com/send?phone=5521987282039&text=Ol%C3%A1' 
                        className="socialMediaIcon"><FaWhatsapp className='bgIcon'/></a>
                     <a href='https://www.linkedin.com/in/ronaldo-mariano' 
                        className="socialMediaIcon"><FaLinkedin className='bgIcon'/></a>
