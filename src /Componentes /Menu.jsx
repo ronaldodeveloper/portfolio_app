@@ -53,7 +53,4 @@ let MenuToggle;
 }
 
 
-            // <header className="menuContent">
-            //   <div><p className="logo"><strong>r</strong><strong>m.</strong></p></div>
-            //  <Menu/>
-            // </header>
+            
